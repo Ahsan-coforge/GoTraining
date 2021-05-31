@@ -10,7 +10,7 @@ build:
 commands:
 - echo Building the Go code...
 - go build hello.go
-artifacts:
+artifacts: "arn:aws:s3:::codepipeline-ap-south-1-614365726039/MyArtifact"
 secondary-artifacts:
 golang_artifacts:
 base-directory: GoTraining
