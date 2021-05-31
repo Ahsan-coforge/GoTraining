@@ -13,7 +13,6 @@ commands:
 artifacts:
 secondary-artifacts:
 golang_artifacts:
-base-directory: my-golang-app
+base-directory: GoTraining
 files:
 - hello
-- task1
