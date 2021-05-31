@@ -1,18 +1,16 @@
 version: 0.2
 
- 
-
 phases:
-install:
-runtime-versions:
-golang: 1.14
-build:
-commands:
-- echo Building the Go code...
-- go build hello.go
+  install:
+    runtime-versions:
+      golang: 1.14
+  build:
+    commands:
+      - echo Building the Go code...
+      - go build hello.go
 artifacts:
-secondary-artifacts:
-golang_artifacts:
-base-directory: GoTraining
-files:
-- hello
+  secondary-artifacts:
+    golang_artifacts:
+      base-directory: GoTraining
+      files:
+        - hello
